@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#08080d" />
+  <title>Uma carta para você</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="petals" id="petals" aria-hidden="true"></div>
+
+  <main class="scene" id="scene">
+    <div class="glow" aria-hidden="true"></div>
+
+    <section class="intro" aria-labelledby="intro-title">
+      <div class="eyebrow"></div>
+
+      <h1 id="intro-title">Para uma pessoa especial.</h1>
+
+      <p class="subtitle">
+        Escrevi algo que talvez você vá gostar Nihi Nihi.<br />
+        Esta carta é pra vc
+      </p>
+
+      <button class="envelope-button" id="openLetter"
+        aria-label="Abrir a carta">
+        <div class="envelope" aria-hidden="true">
+          <div class="env-back"></div>
+          <div class="letter-peek"></div>
+          <div class="env-front"></div>
+          <div class="env-flap"></div>
+          <div class="seal">✿</div>
+        </div>
+      </button>
+
+      <div class="click-hint">Toque na carta</div>
+    </section>
+
+    <section class="letter-stage"
+      aria-live="polite" aria-label="Carta">
+
+      <article class="paper">
+        <div class="paper-top">
+          Uma carta escrita à mão, em pensamento
+        </div>
+
+        <h2>Querida Nihi,</h2>
+
+        <div class="letter-copy" id="letterCopy"></div>
+        <span class="cursor" id="cursor" aria-hidden="true"></span>
+
+        <div class="signature" id="signature">
+          <br />
+          <span id="sender">O Maior idiota do mundo</span>
+        </div>
+      </article>
+
+      <p class="end-note" id="endNote">
+        Algumas cartas terminam aqui.<br />
+      </p>
+
+      <button class="restart" id="restart">
+        Ler novamente
+      </button>
+    </section>
+  </main>
+</body>
+</html>
